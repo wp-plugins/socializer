@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Socializer!
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/
 Description: Socializer is a plugin for  Wordpress that takes advantage of TheFreeWindows' sharing facility to submit posts and pages to the top social bookmarking sites including Facebook (both share and like), even to send them by email and promote them with Google plus.
 Author: TheFreeWindows
