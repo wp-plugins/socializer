@@ -6,7 +6,7 @@ Requires at least: 2.0
 Tested up to: 3.2
 Stable tag: 1.0
 
-Socializer! is a low resources easy to use free plugin for WordPress that will let the visitors of your blog share your posts and pages on the top social networking sites, such as facebook, recommend them by eMail and promote them with Google Plus.
+Socializer! is a low resources easy to use free plugin to have your posts shared on top social networking sites, Google Plus, by eMail...
 
 == Description ==
 
