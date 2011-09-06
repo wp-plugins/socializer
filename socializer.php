@@ -2,28 +2,21 @@
 
 /*
 Plugin Name: Socializer!
-Version: 1.0.2
+Version: 2.0
 Plugin URI: http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/
-Description: Socializer is a plugin for  Wordpress that takes advantage of TheFreeWindows' sharing facility to submit posts and pages to the top social bookmarking sites including Facebook (both share and like), even to send them by email and promote them with Google plus.
+Description: Socializer is a plugin for  Wordpress that takes advantage of TheFreeWindows' sharing facility to submit posts and pages to the top social bookmarking sites including Facebook (both share and like are supported), even to send them by eMail and promote them with Google plus.
 Author: TheFreeWindows
 Author URI: http://www.thefreewindows.com
 */
 
-add_option('tfw_sposts', TRUE);	// Show on posts
-add_option('tfw_spages', TRUE);	// Show on pages
-
-
+add_option('tfw_sposts', TRUE);	
+add_option('tfw_spages', TRUE);	
 
 function tfw_add_option_pages() {
 	if (function_exists('add_options_page')) {
-		add_options_page('Socializer', 'Socializer!', 8, __FILE__, 'tfw_options_page');
+		add_options_page('Socializer!', 'Socializer!', 8, socializer.php, 'tfw_options_page');
 	}		
 }
-
-function tfw_trim_sig($socializer) {
-	return trim($socializer, "*");
-}
-
 
 function tfw_options_page() {
 
@@ -33,7 +26,6 @@ function tfw_options_page() {
 
 		update_option('tfw_sposts', (bool)$_POST["tfw_sposts"]);
 		update_option('tfw_spages', (bool)$_POST["tfw_spages"]);
-
 			
 		echo "Configuration Updated!";
 
@@ -43,16 +35,15 @@ function tfw_options_page() {
 
 	<div class=wrap>
 
-	<h2>Socializer! - The Easy Plugin to Share your Posts</h2>
+	<h2 style="color:maroon;">Socializer! - The Nice and Easy Plugin to Share your Posts</h2>
 
-	<p>To check for new versions or get more information, visit <a href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">the plugin's page at TheFreeWindows</a><br>You may also like to <a href="http://www.thefreewindows.com/all-of-thefreewindows-own-utilities/" target="_blank">check for more free stuff and buy me a coffee!</a></p>
+<p>To get detailed information visit <a href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Socializer's home page at TheFreeWindows</a></p>
+<p>You may also like to <a href="http://www.thefreewindows.com/all-of-thefreewindows-own-utilities/" target="_blank">check for more free stuff and perhaps buy me a coffee!</a></p>
 
 <br><br>
 
 	<form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
 	<input type="hidden" name="info_update" id="info_update" value="true" />
-
-
 
 	<fieldset class="options"> 
 	<legend>Options</legend>
@@ -66,43 +57,42 @@ function tfw_options_page() {
 		<input type="checkbox" name="tfw_spages" value="checkbox" <?php if (get_option('tfw_spages')) echo "checked='checked'"; ?>/>&nbsp;&nbsp;
 		<strong>Display on static pages</strong>
 	</div>
-
-<br>
-
-<div style="padding: 30px 0 0 50px">
-
-<strong>Manual Use</strong>
-<br><br>
-You can also manually add share-links for other posts or pages while you write a post.<br>Just copy and paste the address of the Socializer's Control Panel 
-<br><br>
- &nbsp; http://www.topfreeware.org/socializer.asp?docurl=<b>URL</b>&doctitle=<b>TITLE</b>&nbsp; 
-<br><br>
-replacing URL with the address of the page you'd like to share, and TITLE with its title.
-<br><br>
-	</div>	
-
 	</fieldset>
 
 	<div class="submit">
 		<input type="submit" name="info_update" value="<?php _e('Update options'); ?> &raquo;" />
 	</div>
 	</form>
+
+<br>
+
+<div style="padding: 30px 20px 0 25px">
+
+<strong>Manual Use</strong>
+<br><br>
+When you write a page or post and make references to some other post or page, you can also create manually share-links. Just copy the address of the Socializer's Control Panel:
+<br><br><span style="color:maroon;">
+ &nbsp; http://www.topfreeware.org/socializer.asp?docurl=<b>URL</b>&doctitle=<b>TITLE</b>&nbsp; 
+<br><br></span>
+replacing URL with the address of the page you'd like to share, and TITLE with its title. 
+<hr size="1">
+Here is, for example, how your html code would be, if you were to manually create in some page a <b><a href="http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your Wordpress posts and pages" target="_blank">Share Socializer!</a></b> link, to submit with Socializer the home page of Socializer itself:
+<br><br>
+
+<span style="font-family:courier;">&lt;a href=&quot;http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&amp;doctitle=Download Socializer! to share easily your Wordpress posts and pages&quot; target=&quot;_blank&quot;&gt;Share Socializer!&lt;/a&gt;</span>
+
+<br><br>
+	</div>	
+
 	</div><?php
 }
 
-
-
-function tfw_generate($content) {
-
-	// Load options
+function tfw_generate($content) {	
 
 	$tfw_sposts = get_option('tfw_sposts');
-	$tfw_spages = get_option('tfw_spages');
-
-	// Check page type
+	$tfw_spages = get_option('tfw_spages');	
 
 	$show_socializer = FALSE;
-
 
 	if (is_single() && $tfw_sposts) {
 		$show_socializer = TRUE;
@@ -110,33 +100,24 @@ function tfw_generate($content) {
 
 	if (is_page() && $tfw_spages) {
 		$show_socializer = TRUE;
-	}
-	
+	}	
 	
 	if (!$show_socializer) {
 		return $content;
 	}
-
-
-	// Process button
+	
 if ( !defined('WP_CONTENT_URL') )
     define( 'WP_CONTENT_URL', get_option('siteurl') . '/wp-content');
  
 $socpath = WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/';
 
-	$the_social = $the_social."<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img src='".$socpath."/shenjoy.gif' alt='Share it!' style='background:white;border:none;padding:0;margin:8pt;-moz-border-radius: 8px;border-radius: 8px;'></a>";
-
-
-
-	// Look for trigger
-
+	$the_social = $the_social."<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img src='".$socpath."shenjoy.gif' alt='Share it!' style='background:white;border:none;padding:0;margin:8pt;-moz-border-radius: 8px;border-radius: 8px;'></a>";
 
 		$content .= $the_social;
 
 	return $content;
 
 }
-
 
 add_filter('the_content', 'tfw_generate');
 add_action('admin_menu', 'tfw_add_option_pages');
