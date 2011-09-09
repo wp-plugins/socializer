@@ -4,30 +4,31 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: socialize, share, google plus, email, facebook, socializer, bookmark, social bookmars widget, share widget
 Requires at least: 2.0
 Tested up to: 3.2.1
-Stable tag: 2.0
+Stable tag: 2.5
 
-Socializer! is a low resources easy to use free plugin to have your posts shared on top social networking sites, Google Plus, by eMail...
+Socializer! is a low resources easy to use free plugin to have your posts shared on facebook and top social networks, Google Plus, by eMail...
 
 == Description ==
 
-Socializer! is a low resources easy to use free plugin to have your posts shared on top social networking sites, including Facebook (both "share" and "like" are supported), Google Plus, by eMail...  Socializer! won't make your blog heavier, since it loads a nice and single 5 K animated image -- not the images of all the sites it can submit your posts to, nor lengthy scripts.
+Socializer! is a low resources easy to use free plugin to have your posts shared on the top social networks, including Facebook (both "share" and "like" are supported), promoted with Google Plus, recommended by eMail...  
 
-When a user clicks on the Socializer! animated button, a control panel on Socializer's server opens in a new window, with options to share your post on several bookmarking and social sites even simultaneously, eMail it to a friend, recommend it with Google plus. 
+Socializer! keeps your server light and speedy since it loads just a 6 K animated image at the end of your post and/or page content -- not the images of all the sites it can submit your posts to, nor lengthy scripts.
 
-This way the benefit for your visitors will be great too, since they will be given the opportunity to take their time and share your post on several sites, which is impossible when sharing-links appear on popups, etc. Your blog will remain clean from an overload of sharing images, your server light and speedy, your visitors happy, your posts shared more than any other solution permits.
+When a user clicks on the Socializer! animated button, a control panel in a new window offers share options for several social and bookmarking sites, eMailing to friends, recommendation with Google plus. 
 
-After you activate the plugin you will find on your Wordpress admin pages its options, letting you choose what to share with Socializer! -- posts or pages, or both posts and pages. Alternatively, you can use the Widget of Socializer! 
+After activation you will find on your Wordpress admin pages the options of Socializer!, letting you choose what to share -- posts or pages, or both posts and pages. 
 
-The widget will let you share each and every page of your blog, and it can be placed wherever a widget can appear. It doesn't need any configuration: just activate it at the Settings/plugins page, add it to your sidebar at the Appearance/Widgets page, and enjoy!
+Alternatively, you can use the Socializer! Widget (activated separately). The widget will let you share each and every page of your blog, and it can be placed wherever a widget can appear according to the theme that you use.
 
-Besides these options, you can also create sharing-links manually, if you need to, when you write a page or post and make references to some other post or page. Instructions for the manual creation of sharing-links you can find at the Settings page of Socializer! at your own blog, or right now on the [Home Page of Socializer!](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/)
+If you have a non-Wordpress php site, or asp, simple html etc, you may like to check the [Socializer! Javascript Edition](http://www.thefreewindows.com/5641/socializer-javascript/)
 
-_______
+-----
 
 Socializer! is created by [TheFreeWindows](http://www.thefreewindows.com)
 
-You are welcome to visit the [Home of Socializer! On-Line](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/) to get more information, ask questions, browse for more free applications.
-__________________________________________
+[Home of Socializer! On-Line](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/) - Get more information, ask questions, browse for more free applications.
+
+-----
 
 == Installation ==
 
@@ -35,9 +36,11 @@ To install the plugin follow the usual way of installing new Wordpress plugins: 
 
 The main plugin is configured from a Socializer! page at the Settings section of your blog. The widget can be added to your sidebar from the Appearance/Widgets menu, without needing any further configuration. 
 
+You can also create share-links manually, if you need to, when you write a page or post and make references to some other post or page. Instructions for manual creation of share-links you will find at the Settings page of Socializer! when you activate it, or right now at the [Home Page of Socializer!](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/)
+
 If you need help, [ask for help](http://www.thefreewindows.com/about/contact/)
 
-Except for the Socializer! button that you see here at the Screenshots, there is also a live demo of the Control Panel, in this example submitting to Social Sites the very page of Socializer :: [Socializing the Socializer!](http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/&doctitle=Socializer!) 
+Except for the Socializer! button you see here at the Screenshots, you can also view a live demo of the Control Panel your visitors will use to submit your posts -- in this example submitting the page of Socializer! itself :: [Socializing the Socializer!](http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/&doctitle=Socializer!) 
 
 
 == Frequently Asked Questions ==
@@ -48,11 +51,17 @@ None so far! If you have yourself one, here is [Socializer's Contact page](http:
 
 1. Socializer! button
 
+2. Socializer! Control Panel Logo
+
 == Changelog ==
+
+= 2.5 =
+
+* New animated buttons, now featuring also Gooble Plus and eMail.
 
 = 2.0. =
 
-* Widget version of the plugin added. Optional activation,, no need for configuration, appears anywhere a widget can appear.
+* Widget version of the plugin added. Optional activation, no need for configuration, appears anywhere a widget can appear.
 
 = 1.0.2 =
 
@@ -71,6 +80,10 @@ None so far! If you have yourself one, here is [Socializer's Contact page](http:
 * Double cover of Facebook, share and/or like
 
 == Upgrade Notice ==
+
+= 2.5 =
+
+Upgrading to version 2.5 is recommended. Besides secondary improvements, the animated buttons change (not in dimensions), now featuring also Google Plus and eMail.
 
 = 2.0 =
 

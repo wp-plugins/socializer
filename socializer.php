@@ -2,9 +2,9 @@
 
 /*
 Plugin Name: Socializer!
-Version: 2.0
+Version: 2.5
 Plugin URI: http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/
-Description: Socializer is a plugin for  Wordpress that takes advantage of TheFreeWindows' sharing facility to submit posts and pages to the top social bookmarking sites including Facebook (both share and like are supported), even to send them by eMail and promote them with Google plus.
+Description: Socializer! is a Wordpress plugin that submits posts and pages to the top social networks, including Facebook (both share and like are supported), sends them by eMail and promotes them with Google plus. Check the <a href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Home Page of Socializer!</a> for more details and information on manual use.
 Author: TheFreeWindows
 Author URI: http://www.thefreewindows.com
 */
@@ -35,7 +35,9 @@ function tfw_options_page() {
 
 	<div class=wrap>
 
-	<h2 style="color:maroon;">Socializer! - The Nice and Easy Plugin to Share your Posts</h2>
+	<h2 style="color:green;">Socializer! Nice and Easy Sharing</h2>
+
+<img src="">
 
 <p>To get detailed information visit <a href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Socializer's home page at TheFreeWindows</a></p>
 <p>You may also like to <a href="http://www.thefreewindows.com/all-of-thefreewindows-own-utilities/" target="_blank">check for more free stuff and perhaps buy me a coffee!</a></p>
@@ -71,7 +73,7 @@ function tfw_options_page() {
 <strong>Manual Use</strong>
 <br><br>
 When you write a page or post and make references to some other post or page, you can also create manually share-links. Just copy the address of the Socializer's Control Panel:
-<br><br><span style="color:maroon;">
+<br><br><span style="color:green;">
  &nbsp; http://www.topfreeware.org/socializer.asp?docurl=<b>URL</b>&doctitle=<b>TITLE</b>&nbsp; 
 <br><br></span>
 replacing URL with the address of the page you'd like to share, and TITLE with its title. 
@@ -111,7 +113,7 @@ if ( !defined('WP_CONTENT_URL') )
  
 $socpath = WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/';
 
-	$the_social = $the_social."<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img src='".$socpath."shenjoy.gif' alt='Share it!' style='background:white;border:none;padding:0;margin:8pt;-moz-border-radius: 8px;border-radius: 8px;'></a>";
+	$the_social = $the_social."<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img src='".$socpath."scl.gif' alt='Share it!' style='background:white;border:none;padding:0;margin:8pt;-moz-border-radius: 8px;border-radius: 8px;'></a>";
 
 		$content .= $the_social;
 
