@@ -1,7 +1,7 @@
 === Socializer! ===
 Contributors: TheFreeWindows
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LEU4AZ8DWET2
-Tags: facebook, share, google plus, like, socializer, bookmark, social bookmars widget, share widget, email, recommend, promote
+Tags: facebook, social, share, google plus, like, socializer, bookmark, social bookmars widget, share widget, email, recommend, promote
 Requires at least: 2.0
 Tested up to: 3.2.1
 Stable tag: 4.0
