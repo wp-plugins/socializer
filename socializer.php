@@ -215,7 +215,7 @@ class SocializerWidget extends WP_Widget {
 	$the_social_stlw = stripslashes($trmw);
 ?>
 
-<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=http://<?php echo $_SERVER["HTTP_HOST"] ?><?php echo parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); ?>&doctitle=<?php wp_title(''); ?>' target='_blank'><img id='SocializerW' src='<?=$imadw ?>' alt='Share it!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;<?=$the_social_stlw ?>;'></a>
+<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=http://<?php echo $_SERVER["HTTP_HOST"] ?><?php echo parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); ?>&doctitle=<?php wp_title(''); ?> <?php if ( is_home() ) { bloginfo('name'); } ?>' target='_blank'><img id='SocializerW' src='<?=$imadw ?>' alt='Share it!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;<?=$the_social_stlw ?>;'></a>
         
 <?php
     }
