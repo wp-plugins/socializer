@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Socializer!
-Version: 4.0
+Version: 4.1
 Plugin URI: http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/
-Description: Socializer! is a free and light plugin that will let your posts and pages be shared at the top social networks, including Facebook (both share and like are supported), by eMail recommendations and Google plus suggestions. Check the <a href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Home Page of Socializer!</a> for details and/or technical support. If you like Socializer!, <a href="http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your web pages" target="_blank">share it with your friends</a>, and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LEU4AZ8DWET2" target="_blank">buy me a coffee!</a>
+Description: Socializer! is a free and light plugin that will let your posts and pages be shared at the top social networks, including Facebook (both share and like are supported), by eMail recommendations and Google plus suggestions. Check the <a href="http://www.socializer.info/" target="_blank">Home Page of Socializer!</a> for details and/or technical support. If you like this plugin <a href="http://www.socializer.info/share.asp?docurl=http://www.socializer.info&doctitle=Socializer! The Best Way to Share the Web - Nice, Easy, Flexible, Free" target="_blank">share it with your friends</a>, and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LEU4AZ8DWET2" target="_blank">buy me a coffee!</a>
 Author: TheFreeWindows
 Author URI: http://www.thefreewindows.com
 */
@@ -66,19 +66,19 @@ function tfw_options_page() {
 	<legend style="font-size:15pt;"> &nbsp; Options</legend>
 
 	<div style="padding: 40px 0 0 30px">
-		<input type="checkbox" name="tfw_sposts" value="checkbox" <?php if (get_option('tfw_sposts')) echo "checked='checked'"; ?>/> &nbsp; Display on posts
+		<label><input type="checkbox" name="tfw_sposts" value="checkbox" <?php if (get_option('tfw_sposts')) echo "checked='checked'"; ?>/> &nbsp; Display on posts</label>
 </div>
 
 	<div style="padding: 20px 0 0 30px">
-		<input type="checkbox" name="tfw_spages" value="checkbox" <?php if (get_option('tfw_spages')) echo "checked='checked'"; ?>/> &nbsp; Display on static pages
+		<label><input type="checkbox" name="tfw_spages" value="checkbox" <?php if (get_option('tfw_spages')) echo "checked='checked'"; ?>/> &nbsp; Display on static pages</label>
 	</div>
 
 	<div style="padding: 30px 0 0 30px;">
-		<input type="checkbox" name="tfw_spbe" value="checkbox" <?php if (get_option('tfw_spbe')) echo "checked='checked'"; ?>/> &nbsp; Display at the top
+		<label><input type="checkbox" name="tfw_spbe" value="checkbox" <?php if (get_option('tfw_spbe')) echo "checked='checked'"; ?>/> &nbsp; Display at the top</label>
 </div>
 
 	<div style="padding: 20px 0 0 30px">
-		<input type="checkbox" name="tfw_spaf" value="checkbox" <?php if (get_option('tfw_spaf')) echo "checked='checked'"; ?>/> &nbsp; Display at the bottom
+		<label><input type="checkbox" name="tfw_spaf" value="checkbox" <?php if (get_option('tfw_spaf')) echo "checked='checked'"; ?>/> &nbsp; Display at the bottom</label>
 	</div>
 
 <div style="padding: 40px 20px 0 30px">		
@@ -141,10 +141,10 @@ Removal of the white background will give you a transparent button. This is <b>n
 <br>
 <br>
 <br>
-<div onmouseover="this.style.backgroundColor='#f4f4f4';return true;" onmouseout="this.style.backgroundColor='#fdfdfd';return true;" style="padding:10px;border:1px dotted silver;font-size:14pt;letter-spacing:2px;margin-right:250px;cursor:hand;cursor:pointer;" onClick="window.open('http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your web pages');return false">
-  If you like Socializer! <strong><a style="color:#2b95ff;text-decoration:none;letter-spacing:7px;" href="http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your web pages" target="_blank">Share it!</a></strong></div>
+<div onmouseover="this.style.backgroundColor='#f4f4f4';return true;" onmouseout="this.style.backgroundColor='#fdfdfd';return true;" style="padding:10px;border:1px dotted silver;font-size:14pt;letter-spacing:2px;margin-right:250px;cursor:hand;cursor:pointer;" onClick="window.open('http://www.socializer.info/share.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your web pages');return false">
+  If you like Socializer! <strong><a style="color:#2b95ff;text-decoration:none;letter-spacing:7px;" href="http://www.socializer.info/share.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Download Socializer! to share easily your web pages" target="_blank">Share it!</a></strong></div>
 <br>
-<div style="padding:1px 0 0 0;letter-spacing:2px;"> &nbsp; &raquo; <a style="color:#2b95ff;text-decoration:none;" href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Socializer! Home Page</a> at <a style="color:#2b95ff;text-decoration:none;" href="http://www.thefreewindows.com/" target="_blank">TheFreeWindows</a> &copy;</div>
+<div style="padding:1px 0 0 0;letter-spacing:2px;"> &nbsp; &raquo; <a style="color:#2b95ff;text-decoration:none;" href="http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/" target="_blank">Socializer! Plugin Home</a> at <a style="color:#2b95ff;text-decoration:none;" href="http://www.thefreewindows.com/" target="_blank">TheFreeWindows</a> &copy;</div>
 <br>
 <div style="padding:1px 0 0 0;letter-spacing:2px;"> &nbsp; &raquo; <a style="color:#2b95ff;text-decoration:none;" href="http://www.thefreewindows.com/all-of-thefreewindows-own-utilities/" target="_blank">Check for more free stuff</a></div>
 <br>
@@ -186,7 +186,7 @@ function tfw_generate($content) {
 	$the_social_stl = stripslashes($trm);
 	$imad = str_replace($remsp, " ", $tfw_cimg);
 
-	$the_social = $the_social."<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img id='Socializer' src='".$imad."' alt='Share it!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;".$the_social_stl.";'></a>";
+	$the_social = $the_social."<a style='border:none;' href='http://www.socializer.info/share.asp?docurl=".get_permalink()."&doctitle=".get_the_title('')."' target='_blank'><img id='Socializer' src='".$imad."' alt='Share in top social networks!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;".$the_social_stl.";'></a>";
 
 	if ($tfw_spaf && $show_socializer) 
 		$content .= $the_social;
@@ -215,7 +215,7 @@ class SocializerWidget extends WP_Widget {
 	$the_social_stlw = stripslashes($trmw);
 ?>
 
-<a style='border:none;' href='http://www.topfreeware.org/socializer.asp?docurl=http://<?php echo $_SERVER["HTTP_HOST"] ?><?php echo parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); ?>&doctitle=<?php wp_title(''); ?> <?php if ( is_home() ) { bloginfo('name'); } ?>' target='_blank'><img id='SocializerW' src='<?=$imadw ?>' alt='Share it!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;<?=$the_social_stlw ?>;'></a>
+<a style='border:none;' href='http://www.socializer.info/share.asp?docurl=http://<?php echo $_SERVER["HTTP_HOST"] ?><?php echo parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); ?>&doctitle=<?php wp_title(''); ?> <?php if ( is_home() ) { bloginfo('name'); } ?>' target='_blank'><img id='SocializerW' src='<?=$imadw ?>' alt='Share in top social networks!' style='padding:0;-moz-border-radius: 8px;border-radius: 8px;<?=$the_social_stlw ?>;'></a>
         
 <?php
     }

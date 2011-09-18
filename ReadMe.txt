@@ -1,24 +1,32 @@
 === Socializer! ===
 Contributors: TheFreeWindows
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LEU4AZ8DWET2
-Tags: facebook, social, share, google, google plus, like, socializer, bookmark, social bookmars widget, share widget, email, recommend, promote,twitter
+Tags: facebook, social, share, google, google plus,facebook like, socializer, bookmark, social bookmars widget, share widget, email, recommend, promote,twitter
 Requires at least: 2.0
 Tested up to: 3.2.1
-Stable tag: 4.0
+Stable tag: 4.1
 
 Socializer! is a low resources easy to use free plugin to have your posts shared on facebook and top social networks, Google Plus, by eMail...
 
 == Description ==
 
-With the free Socializer! plugin you can have your posts shared on the top social networks, including Facebook (both "share" and "like" are supported), promoted with Google Plus, recommended by eMail, keeping your pages speedy. Socializer! loads just a 6 K animated image -- not the images of all the sites it can submit your posts to, nor lengthy scripts. When a user clicks on the Socializer! button, a clean and pleasant control panel in a new window offers options for sharing on top social and bookmarking sites, eMailing to friends, suggesting with Google plus. 
+With the free Socializer! plugin you can have your posts shared on the top social networks, including Facebook (both "share" and "like" are supported), promoted with Google Plus, recommended by eMail, keeping your pages speedy. Socializer! loads just a 6 K animated image -- not the images of all the sites it can submit your posts to, nor lengthy scripts. 
 
-Socializer! will let you choose what to share -- posts or pages, or both posts and pages, place the share button at the top of your content, or at the bottom, or at both the top and the bottom. Alternatively or along with this button, you can use the Socializer! Widget, letting you share from your sidebar(s) each and every page of your blog.
+When a user clicks on the Socializer! button, a clean and pleasant control panel in a new window offers options for sharing on more than 20 top social and bookmarking sites, eMailing to friends, suggesting with Google plus. 
+
+Socializer! will let you choose what to share -- posts or pages, or both posts and pages, place the share button at the top of your content, or at the bottom, or at both the top and the bottom. 
+
+Alternatively or along with this button, you can use the Socializer! Widget, letting you share from your sidebar(s) each and every page of your blog.
 
 Socializer! will also let you use css styles to customize the position, alignment etc, of both the content and the widget buttons - even replace the default Socializer! buttons with custom ones of your own! It will also let you create manually occasional, sporadic, share-links independently of the regular buttons.
 
-Note: If you have also a non-Wordpress php site, or asp, simple html etc, you may like to check the [Socializer! Javascript Edition](http://www.thefreewindows.com/5641/socializer-javascript/)
+***
 
-[Home of Socializer! On-Line](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/) - Get more information, ask questions, browse for more free applications.
+Note that if you have also a non-Wordpress php site, or asp, simple html etc, there is a [Javascript Edition of Socializer!](http://www.thefreewindows.com/5641/socializer-javascript/)
+
+***
+
+[Socializer! Home](http://www.socializer.info) and [Plugin Downloads](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/) - Get more information, ask questions, browse for more free programs.
 
 
 
@@ -26,31 +34,34 @@ Note: If you have also a non-Wordpress php site, or asp, simple html etc, you ma
 
 To install Socializer! follow the usual way of installing Wordpress plugins: unzip the archive and upload the "socializer" folder inside the plugins folder of your blog, then activate Socializer! and configure it. Both content and widget options are configured from the Socializer! admin page at the Settings section of your blog.
 
-You can also create occasional share-links manually, if you need to, when you write a page or post and make references to some other post or page. You can read instructions for this manual creation of share-links at the [Home Page of Socializer!](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/)
+You can also create occasional share-links manually, if you need to, when you write a page or post and make references to some other post or page. Read instructions for this at [Socializer! Downloads](http://www.thefreewindows.com/5598/socializer-share-Wordpress-posts-pages/)
 
 If you need help, [ask for help](http://www.thefreewindows.com/about/contact/)
 
-Except for the Socializer! button that you see here at the Screenshots, you can also view a live demo of the Panel your visitors will see when they share your posts - in this example sharing the page of Socializer! itself :: [Socializing the Socializer!](http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Socializer!) 
+Except for the Socializer! button that you see here at the Screenshots, you can also view a live demo of the Sharing Panel your visitors will see - in this example sharing the page of Socializer! itself :: [Socializing the Socializer!](http://www.socializer.info/share.asp?docurl=http://www.socializer.info&doctitle=Socializer! The Best Way to Share the Web - Nice, Easy, Flexible, Free).
 
 
 
 == Frequently Asked Questions ==
 
-None so far! If you have yourself a question, here is [Socializer's Contact page](http://www.thefreewindows.com/about/contact/)
+None so far! If you have yourself a question, here is the [Contact page](http://www.thefreewindows.com/about/contact/)
 
 
 
 == Screenshots ==
 
-1. Socializer! Sharing Button
+1. Socializer! default sharing button; you can change it with anything.
 
 2. Logo of the Socializer! Sharing Panel
 
-Live demo of the Sharing Panel - in this example submitting the page of Socializer! itself: [Socializing the Socializer!](http://www.topfreeware.org/socializer.asp?docurl=http://www.thefreewindows.com/5598/socializer-share-wordpress-posts-pages/&doctitle=Socializer!) 
 
 
 
 == Changelog ==
+
+= 4.1 =
+
+* Changes to the code that will let the users of Socializer connect to the new server at [www.socializer.info](http://www.socializer.info). The old server will continue to work for some months, but you should upgrade.
 
 = 4.0 =
 
@@ -84,6 +95,10 @@ Live demo of the Sharing Panel - in this example submitting the page of Socializ
 
 
 == Upgrade Notice ==
+
+= 4.1 =
+
+Upgrade to this version to connect to the new server at [www.socializer.info](http://www.socializer.info)
 
 = 4.0 =
 
